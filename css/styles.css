@@ -1,0 +1,18 @@
+:root{
+    --color-primary: #2584FF;
+    --color-secondary: #00D9FF;
+    --color-accent: #FF3400;
+    --color-heading: #1B0760;
+    --color-body: #918CA4;
+}
+
+
+h1, 
+h2, 
+h3 {
+    color: var(--color-heading);
+}
+
+p {
+    color: var(--color-body);
+}
