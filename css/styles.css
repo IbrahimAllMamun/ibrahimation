@@ -5,6 +5,7 @@
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+  --color-body-darken: #5c5577;
   --color-border: #ccc;
   --border-radius: 30px;
 }
@@ -377,13 +378,49 @@ p {
     margin: 0 2rem;
 }
 
-/*  */
+/* Blockquote */
+.quote {
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--color-body-darken);
+    margin-left: 0;
+}
 
+.quote__text::before {
+    content: open-quote;
+}
 
+.quote__text::after {
+    content: close-quote;
+}
 
+.quote__author {
+    font-size: 3rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-style: normal;
 
+}
 
+.quote__organization {
+    font-size: 2rem;
+    font-style: normal;
+}
 
+.quote__line {
+    position: relative;
+    top: 5px;
+}
 
+@media screen and (min-width: 1024px) {
+    .quote{
+        font-size: 2.4rem;
+    }
+
+    .quote__organization {
+        font-size: 1.6;
+    }
+}
 /*  */
 /*  */
