@@ -263,6 +263,7 @@ p {
     color: #cdcbd7;
 }
 
+/* Input Group */
 .input-group {
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
@@ -285,4 +286,34 @@ p {
     }
 }
 
-/* Input Group */
+/* Card */
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.card__header,
+.card__body {
+    padding: 2rem 3rem;
+}
+
+
+.card--primary .card__header {
+    background: var(--color-primary);
+    color: aliceblue;
+}
+.card--secondary .card__header {
+    background: var(--color-secondary);
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+/* Card */
+/* Card */
