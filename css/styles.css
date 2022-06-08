@@ -84,14 +84,14 @@ p {
 }
 
 .link-arrow::after {
-  content: "->";
+  content: "-->";
   margin-left: 5px;
   transition: margin 0.5s;
 }
 
 .link-arrow:hover::after {
   transform: 5px;
-  margin-left: 50px;
+  margin-left: 15px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -739,7 +739,7 @@ p {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
   margin: 4rem auto;
-  max-width: 650px;
+  max-width: 570px;
 }
 
 .block-domain__prices {
@@ -772,13 +772,30 @@ p {
 }
 
 /* Feature */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
 
 
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 
-
-
-
-
+}
 
 
 
