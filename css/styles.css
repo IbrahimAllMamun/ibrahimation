@@ -90,7 +90,6 @@ p {
 }
 
 .link-arrow:hover::after {
-  transform: 5px;
   margin-left: 15px;
 }
 
@@ -171,7 +170,7 @@ p {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -240,6 +239,7 @@ p {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+    padding: 2rem 3rem;
   }
 }
 
@@ -301,6 +301,7 @@ p {
   border: 0px;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -474,7 +475,7 @@ p {
     }
 
     .quote__organization {
-        font-size: 1.6;
+        font-size: 1.6rem;
     }
 }
 
@@ -532,7 +533,8 @@ p {
 /* Callout */
 .callout {
   padding: 4rem;
-  border-radius: 5px;
+  border-radius: 20px;
+  margin: 0 6rem;
 }
 
 .callout--primary {
@@ -568,7 +570,6 @@ p {
   .callout .btn {
     justify-self: start;
     margin: 0 2rem;
-
   }
 }
 
@@ -744,8 +745,9 @@ p {
 }
 
 .block-domain__prices {
+  color: var(--color-heading);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -757,8 +759,51 @@ p {
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    height: 2.5rem;
   }
 }
+
+/* Showcase Block */
+.showcase-header {
+  color: #fff;
+}
+
+.showcase-body {
+  color: #7b858b;
+}
+
+/* Showcase Block */
+.block-showcase__image > img {
+  width: 100%;
+}
+
+.block-showcase {
+  padding-bottom: calc(var(--padding-vertical) + 9rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    justify-self: end;
+  }
+
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 768px;
+  }
+
+  .block-showcase ul {
+    margin-left: 3rem;
+  }
+}
+
+
+
+
 
 /* Plans Block */
 .block-plans {
@@ -878,7 +923,24 @@ p {
 
 
 /*  */
+/* .callout {
+  position: relative;
 
+}
+
+.floating {
+  background: #232323;
+  position: absolute;
+  top: 49px;
+  width: 250vw;
+  z-index: -5;
+  left: -612px;
+  height: 239%;
+}
+
+footer.footer {
+  padding-top: 0px ;
+} */
 
 
 /*  */
